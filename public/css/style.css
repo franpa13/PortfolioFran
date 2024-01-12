@@ -1,0 +1,507 @@
+ /* ESTILOS FOOTER */
+ body {
+     margin: 0;
+     padding: 0;
+     font-family: 'REM', sans-serif;
+
+ }
+
+ .menu {
+     display: flex;
+     flex-wrap: wrap;
+     background-color: #272121;
+     justify-content: space-between;
+     align-items: center;
+
+ }
+
+ .nav__ul {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     margin-right: 20px;
+
+ }
+
+ .nav__ul li {
+     text-decoration: none;
+     list-style: none;
+     margin: 20px;
+
+
+
+ }
+
+ .nav__ul li a {
+     color: rgb(4, 4, 4);
+     text-decoration: none;
+     font-size: 15px;
+     color: white;
+     padding: 10px;
+
+ }
+
+ .nav__ul li a:hover {
+
+     border: 1px solid orange;
+     border-radius: 5px;
+ }
+
+ .nav__ul li .correo {
+     font-size: 17px;
+ }
+
+ header {
+
+     color: rgb(239, 232, 232);
+     text-align: center;
+     padding: 10px;
+     height: 80px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .symbol-animation {
+     display: flex;
+     align-items: baseline;
+     font-size: 30px;
+ }
+
+ .tudo {
+     background-color: #000000;
+
+ }
+
+ .symbol {
+
+     padding: 5px 8px;
+     border-radius: 5px;
+     animation: changeColor 2s infinite alternate;
+ }
+
+ @keyframes changeColor {
+     0% {
+         color: #ff5722;
+     }
+
+     50% {
+         color: #00bcd4;
+     }
+
+     100% {
+         color: #ff5722;
+     }
+ }
+
+ /* ESTILOS MAIN */
+ main {
+     color: white;
+     margin-top: 50px;
+ }
+
+ .sobre__mi {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+
+ }
+
+ .img__mia {
+
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 50%;
+
+ }
+
+ .saludo p {
+     /* margin-left: 50px;
+     margin-top: 60px; */
+
+     color: rgb(174, 190, 204);
+ }
+
+ .section__saludo {
+
+     width: 50%;
+ }
+
+ #texto-progresivo {
+     display: flex;
+     opacity: 0;
+     /* Hace que el texto sea inicialmente invisible */
+     animation: fadeInOut 3s linear infinite alternate;
+     /* Define la animación y su duración */
+ }
+
+ @keyframes fadeInOut {
+
+     0%,
+     100% {
+         opacity: 0;
+         /* Inicio y fin de la animación, el texto está invisible */
+     }
+
+     50% {
+         opacity: 1;
+         /* Mitad de la animación, el texto está totalmente visible */
+     }
+ }
+
+ .nombre__descripcion {
+     margin-left: 180px;
+     width: 100%;
+
+ }
+
+ .nombre__descripcion h2 {
+     color: #e6592e;
+     margin-top: 5px;
+     font-size: 50px;
+     margin-bottom: 5px;
+     font-family: 'Noto Sans', sans-serif;
+ }
+
+ .nombre__descripcion #texto-progresivo {
+     font-size: 30px;
+ }
+
+ .descripcion__mia {
+
+     font-size: 20px;
+     margin-left: 50px;
+     margin-top: 30px;
+     color: rgb(174, 190, 204);
+ }
+
+ .nav__ul__dos {
+     display: flex;
+     justify-content: center;
+     margin-top: 60px;
+
+ }
+
+ .nav__ul__dos li {
+     text-decoration: none;
+     list-style: none;
+     margin: 20px;
+     text-align: center;
+
+
+ }
+
+ /* .nav__ul__dos li a i{
+    font-size:35px;
+ } */
+
+
+ /* ESTILOS SKILLS */
+
+
+ .skills {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-top: 50px;
+     margin-left: 50px;
+     margin-right: 50px;
+     border-radius: 20px;
+     height: auto;
+
+ }
+
+ .skills__title {
+     /* background-color: #00bcd4; */
+     margin-top: 50px;
+     margin-bottom: 50px;
+     font-size: 30px;
+     color: #e6592e;
+     text-align: center;
+
+
+ }
+
+ .skills__line {
+     margin-top: 10px;
+     width: 100%;
+
+     display: flex;
+
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+ }
+ .img__tailwind{
+    margin-top: 20px;
+
+    width: 100px;
+ }
+
+ .skills__box {
+
+     background-color: rgb(0, 0, 0);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     margin: 20px;
+     width: 28%;
+     height: auto;
+     border-radius: 5px;
+ }
+
+ .skills__box:hover {
+     background-color: rgb(78, 77, 77);
+
+ }
+
+ .skills__box i {
+     margin-top: 15px;
+     font-size: 60px;
+ }
+
+ .skills__name {
+     color: white;
+     font-size: 16px;
+ }
+
+ /* Cambia el color del fondo y el texto del botón de Previous (anterior) */
+ .carousel-control-prev {
+     background-color: #4285f4;
+     /* Cambia este color al que desees */
+     color: #ffffff;
+     /* Cambia este color al que desees */
+ }
+
+ /* Cambia el color del fondo y el texto del botón de Next (siguiente) */
+ .carousel-control-next {
+     background-color: #34a853;
+     /* Cambia este color al que desees */
+     color: #ffffff;
+     /* Cambia este color al que desees */
+ }
+
+ /* Cambia el color del indicador activo */
+ .carousel-indicators .active {
+     background-color: #4285f4;
+     /* Cambia este color al que desees */
+ }
+
+
+ /* SOFT SKILLS Y FORMACION ACADEMICA */
+ /* .soft__skills__formacion__academica{
+    margin-top: 25px;
+    display: flex;
+    height: 500px;
+    justify-content: space-evenly;
+    
+  }
+  .soft-skills{
+    width: 45%;
+    background-color: #f8f4f4;
+    border-radius: 10px;
+  }
+  .academic{
+    border-radius: 10px;
+    width: 60%;
+    margin-top: 50px;
+   
+    width: 100vw;
+
+  }
+  .academic h2{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+#carouselExampleCaptions{
+    width: 30%;
+    margin: 20px;
+}
+#carouselExampleCaptions img{
+    height: 320px;
+}
+#carouselExampleCaptions h3{
+    text-align: center;
+    margin-bottom: 20px
+}
+.carousel-item p{
+    background-color: #ffffff;
+    color: black;
+    font-weight: bold;
+    font-size: large;
+    
+}
+
+.academic__title{
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+.academia{
+    display: flex;
+    align-items: center;
+  justify-content: space-between;    
+}
+  .academic__courses__box{
+    display: flex;
+    width: 40%;
+   justify-content: space-between;
+  }
+  .academic__courses{
+    display: flex;
+   flex-wrap: wrap;
+    gap: 100px;
+
+  }
+  .academic__courses__box a{
+ 
+   margin-left: 20px;
+  }
+  .img__egg{
+    width: 37%;
+  } */
+ .academic__courses {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+ }
+.academic h2{
+    text-align: center;
+}
+ .academic__courses__box {
+     border: none;
+     border-radius: 10px;
+     margin-bottom: 20px;
+     padding: 20px;
+     width: 33%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+    
+
+     transition: box-shadow 0.3s ease;
+ }
+
+ .academic__courses__box:hover {
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+
+ .academic__courses__list {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+ }
+
+ .academic__courses__item__title h4 {
+     color: #ffffff;
+     margin: 0;
+     font-size: 1.5em;
+     transition: color 0.3s ease;
+ }
+
+ .academic__courses__item__subtitle p {
+     color: #ffffff;
+     margin: 0;
+     transition: color 0.3s ease;
+ }
+
+ .academic__courses__box:hover .academic__courses__item__title h4,
+ .academic__courses__box:hover .academic__courses__item__subtitle p {
+     color: orange;
+ }
+
+ .academic__courses__box a {
+     display: inline-block;
+     padding: 10px 20px;
+     margin-top: 15px;
+     background-color: #007bff;
+     color: #fff;
+     text-decoration: none;
+     border-radius: 5px;
+     transition: background-color 0.3s ease;
+ }
+
+ .academic__courses__box a:hover {
+     background-color: orange;
+     color: black;
+ }
+
+ .academic__courses__box iframe {
+     width: 100%;
+     height: 300px;
+     border: none;
+     margin-top: 15px;
+     transition: transform 0.3s ease;
+ }
+
+ .academic__courses__box:hover iframe {
+     transform: scale(1.05);
+ }
+
+ .academic__courses__box img.img__egg {
+     width: 100%;
+     height: auto;
+     border-radius: 10px;
+     margin-top: 15px;
+     transition: transform 0.3s ease;
+ }
+
+ .academic__courses__box:hover img.img__egg {
+     transform: scale(1.05);
+ }
+ /* .proyectos__reales{
+    background-color: #b6b6b6;
+ } */
+
+
+ /* PROYECTOS */
+ .proyectos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+ }
+ .card {
+    margin: 20px;
+
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  .form__contacto{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .primeros__campos{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    gap: 20px;
+  }
+  .form__contacto label{
+ display: flex;   
+ flex-direction: column;
+ color: #e6592e;
+ font-weight: 700;
+ gap: 12px;
+    
+  }
+  .form__contacto label input{
+    font-weight: bold;
+  }
+  .form__contacto label textarea{
+    font-weight: bold;
+  }

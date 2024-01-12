@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Referencia de la hoja de estilo de Css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fonte del Proyecto Raleway -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <title> Mi Portafolio</title>
+</head>
+
+<body>
+
+
+    <!-- Sección del Menú header -->
+    <div class="tudo">
+
+        <section class="menu">
+            <header class="menu__header">
+                <div class="symbol-animation">
+                    <span class="symbol">&lt;</span> <span>Francisco Paredes</span> <span class="symbol">/></span>
+                </div>
+
+            </header>
+
+            <nav>
+                <ul>
+                    <div class="nav__ul">
+                        <li>
+                            <a href="#sobre-mi">Acerca de Mi</a>
+                        </li>
+                        <li>
+                            <a href="#skills">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#formacion">Educacion</a>
+                        </li>
+                        <li>
+                            <a href="#proyectos">Proyectos</a>
+                        </li>
+                        <li>
+                            <button data-bs-toggle="modal" class="btn btn-danger" data-bs-target="#exampleModal">
+                                Contactame
+                            </button>
+                        </li>
+
+                    </div>
+                </ul>
+            </nav>
+
+        </section>
+        <!-- Modal -->
+        <div class="modal fade text-white" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content bg-dark">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Contactame <i
+                                class="fa-solid fa-phone-volume"></i> </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form__contacto" action="https://formspree.io/f/xgejgneg" method="POST">
+                            <div class="primeros__campos">
+                                <label class="text-orange">
+                                    Su nombre:
+                                    <input type="text" name="text" class="form-control">
+                                </label>
+                                <label class="text-orange">
+                                    Su correo:
+                                    <input type="email" name="email" class="form-control">
+                                </label>
+                            </div>
+                            <label class="text-orange">
+                                Su mensaje:
+                                <textarea name="message" class="form-control"></textarea>
+                            </label>
+                            <!-- your other form fields go here -->
+                            <p>Respondere a la brevedad muchas gracias <i class="fa-regular fa-face-smile-wink"></i></p>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-warning text-dark">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <section class="sobre__mi" id="sobre-mi">
+                <div class="section__saludo">
+                    <div class="saludo">
+                        <p>¡Hola! mi nombre es : </p>
+                    </div>
+                    <div class="nombre__descripcion">
+                        <h2>Francisco Paredes</h2>
+                        <div id="texto-progresivo">
+                            Full Stack Developer...</div>
+
+                    </div>
+                    <div class="descripcion__mia">
+                        <p>
+
+
+                            A los 22 años, me encuentro cursando la carrera de Analista Programador Universitario en la
+                            Facultad de Ingeniería de la provincia de Jujuy (UNJU). Además de mi formación académica, he
+                            participado en bootcamps y cursos de programación.
+
+                            En la actualidad, desempeño funciones en una agencia de programación especializada en la
+                            ejecución de proyectos adaptados a las necesidades específicas de los clientes. Mi enfoque
+                            se centra en el apasionante campo del Desarrollo Web, donde constantemente amplío mis
+                            conocimientos en esta área.</p>
+                    </div>
+                </div>
+                <div class="img__mia">
+                    <img src="../assets/ParedesFrancisco.png" alt="">
+                    <div class="iconos__redes">
+                        <ul>
+                            <div class="nav__ul__dos">
+                                <li>
+                                    <a href="https://github.com/franpa13" target="_blank"><i class="fa-brands fa-github"
+                                            style="color: #d6d0d0;"></i></a>
+                                    <p>mi Github</p>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/francisco-paredes-354a2b26b" target="_blank"><i
+                                            class="fa-brands fa-linkedin" style="color: #9c9696;"></i></a>
+                                    <p>mi Linkedin</p>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/fran.paredess/" target="_blank"><i
+                                            class="fa-brands fa-instagram " style="color: #eae8e8;"></i></a>
+                                    <p>mi Instagram</p>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-solid fa-file" style="color: #b1b8c4;"></i></a>
+                                    <p>Descargar cv</p>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- Sección de Skills -->
+            <section class="skills" id="skills">
+                <h3 class="skills__title">Skills</h3>
+                <div class="skills__line">
+                    <div class="skills__box">
+                        <i class="fa-brands fa-html5" style="color: #babdc5;"></i>
+                        <p class="skills__name"> HTML 5</p>
+                    </div>
+                    <div class="skills__box">
+                        <i class="fa-brands fa-css3-alt" style="color: #babdc5;"></i>
+                        <p class="skills__name">CSS</p>
+                    </div>
+
+                    <div class="skills__box">
+                        <i class="fa-brands fa-js" style="color:  #babdc5;;"></i>
+                        <p class="skills__name">Javascript</p>
+                    </div>
+                    <div class="skills__box">
+                        <i class="fa-brands fa-node" style="color: #babdc5;"></i>
+                        <p class="skills__name">Node JS</p>
+                    </div>
+
+                    <div class="skills__box">
+                        <i class="fa-brands fa-react" style="color: #babdc5;"></i>
+                        <p class="skills__name">React</p>
+                    </div>
+                    <div class="skills__box">
+                        <i class="fa-brands fa-git-alt" style="color: #babdc5;"></i>
+                        <p class="skills__name">Git</p>
+                    </div>
+                    <div class="skills__box">
+                        <i class="fa-solid fa-database" style="color: #babdc5;"></i>
+                        <p class="skills__name">MySql</p>
+                    </div>
+                    <div class="skills__box">
+                        <img src="../assets/logos/tailwind-css.svg" class="img__tailwind" alt="tailwind">
+                        <p class="skills__name">Taildwin css</p>
+                    </div>
+                    <div class="skills__box">
+                        <i class="fa-brands fa-github" style="color: #babdc5;"></i>
+                        <p class="skills__name">Github</p>
+                    </div>
+                </div>
+            </section>
+            <!-- SOFT SKILLS-->
+            <section class="academia">
+
+                <!-- Sección de Formación académica -->
+                <div class="academic" id="formacion">
+                    <h3 class="skills__title">Formacion academica</h3>
+                    <div class="academic__courses">
+                        <div class="academic__courses__box">
+                            <ul class="academic__courses__list">
+
+                                <li class="academic__courses__item__title">
+                                    <h4>DESARROLLADOR WEB FULL STACK </h4>
+                                </li>
+                                <li class="academic__courses__item__subtitle">
+                                    <p>MAY/2023 - DIC/2023 (DIGITAL HOUSE) </p>
+                                </li>
+                                <a
+                                    href="https://drive.google.com/file/d/1n2hXaryyns2MtRBUZEnVW06_d9G1FTlS/view?usp=sharing">ver
+                                    certificado</a>
+                            </ul>
+                            <iframe src="../assets/certificados/digital house.pdf"></iframe>
+                        </div>
+                        <div class="academic__courses__box">
+                            <ul class="academic__courses__list">
+
+                                <li class="academic__courses__item__title">
+                                    <h4>PROGRAMA ORACLE NEXT EDUCATION -FRONT END DEVELOPER</h4>
+                                </li>
+                                <li class="academic__courses__item__subtitle">
+                                    <p> ABR/2023 - SEPT/2023 (ALURA LATAM-PROGRAMA ONE)</p>
+                                </li>
+                                <a
+                                    href="https://drive.google.com/file/d/1IXr-bts_5ucxuXzWFprci1HuuzsRoGGn/view?usp=sharing">Ver
+                                    certificado</a>
+                            </ul>
+                            <iframe
+                                src="../assets/certificados/FranciscoJavierParedes-Oracle Next Education (1).pdf"></iframe>
+                        </div>
+
+                        <div class="academic__courses__box">
+                            <ul class="academic__courses__list">
+
+                                <li class="academic__courses__item__title">
+                                    <h4>DESARROLLADOR WEB INICIAL</h4>
+                                </li>
+                                <li class="academic__courses__item__subtitle">
+                                    <p> FEB/2023-MAY/2023 (UTN ARGENTINA PROGRAMA )</p>
+                                </li>
+                                <a href="https://drive.google.com/file/d/1geoBNJ9kzavL8VbHhzNGAUebn3F_1k2g/view?usp=sharing"
+                                    target="_blank">
+                                    Ver Certificado
+                                </a>
+                            </ul>
+                            <iframe src="../assets/certificados/ARG PROGRAMA.pdf"></iframe>
+                        </div>
+                        <div class="academic__courses__box">
+                            <ul class="academic__courses__list">
+
+                                <li class="academic__courses__item__title">
+                                    <h4>YO PUEDO PROGRAMAR </h4>
+                                </li>
+                                <li class="academic__courses__item__subtitle">
+                                    <p> JUN/2023-JUL/2023 (MICROSOFT)</p>
+                                </li>
+                                <a href="https://drive.google.com/file/d/1pC3Iqp_u5AkMD_CcZu5K9ALi1yB2mWvv/view?usp=sharing"
+                                    target="_blank">
+                                    Ver Certificado
+                                </a>
+                            </ul>
+                            <iframe
+                                src="../assets/certificados/Certificado Yo puedo programar - Francisco Javier Paredes.pdf"></iframe>
+                        </div>
+                        <div class="academic__courses__box">
+                            <ul class="academic__courses__list">
+
+                                <li class="academic__courses__item__title">
+                                    <h4>TALLER REACT.JS </h4>
+                                </li>
+                                <li class="academic__courses__item__subtitle">
+                                    <p> OCT/2023 (TALLERDONWEB)</p>
+                                </li>
+                                <a href="https://drive.google.com/file/d/1iAtCtj4jOxtWnsK8ZAJQgLxAKUK2S8zm/view?usp=sharing"
+                                    target="_blank">
+                                    Ver Certificado
+                                </a>
+                            </ul>
+                            <iframe src="../assets/certificados/TALLER DON WEB.pdf"></iframe>
+                        </div>
+                        <div class="academic__courses__box">
+                            <ul class="academic__courses__list">
+
+                                <li class="academic__courses__item__title">
+                                    <h4>DESARROLLADOR WEB CON REACT JS </h4>
+                                </li>
+                                <li class="academic__courses__item__subtitle">
+                                    <p> OCT/2023-NOV/2023 (UTN ARGENTINA PROGRAMA)</p>
+                                </li>
+                                <a href="https://drive.google.com/file/d/1Ocv18fqOPqQZf9hg6UjiCeVy_xLptINa/view?usp=sharing"
+                                    target="_blank">
+                                    Ver Certificado
+                                </a>
+                            </ul>
+                            <iframe src="../assets/certificados/Certificado_de_finalizacin_curso_react.pdf"></iframe>
+                        </div>
+                        <div class="academic__courses__box">
+                            <ul class="academic__courses__list">
+
+                                <li class="academic__courses__item__title">
+                                    <h4>PROGRAMACION WEB DESDE CERO</h4>
+                                </li>
+                                <li class="academic__courses__item__subtitle">
+                                    <p>JUL/2023-AGO/2023 (EGG CORPORATION)</p>
+                                </li>
+                            </ul>
+                            <img class="img-fluid" src="../assets/certificados/Captura de pantalla (33).png" alt="">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCION PROYECTOS -->
+
+            <section class="todos__proyects" id="proyectos">
+
+                <div class="proyectos__reales">
+                    <h3 class="skills__title">REAL PROYECTS</h3>
+                    <p>Estos son proyectos reales en los que trabaje, acutualmente me encuentro prestando mis servicios
+                        en
+                        una consultura donde realizamos proyectos para distintos clientes </p>
+                </div>
+                <h3 class="skills__title">PROYECTS FUERA DEL TRABAJO</h3>
+                <div class="proyectos">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../assets/img__proyects/toDoList.png" class="card-img-top" alt="TODOLIST">
+                        <div class="card-body">
+                            <h5 class="card-title">TO DO LIST </h5>
+                            <p class="card-text">PROYECTO FINAL DEL CURSO DESARROLLADOR WEB CON REACT JS(ARG PROGRAMA)
+                            </p>
+                            <a target="_blank" href="https://meek-blancmange-95f182.netlify.app/"
+                                class="btn btn-primary">Ver Proyecto</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="../assets/img__proyects/apepperia.png" class="card-img-top" alt="APPEPERIA">
+                        <div class="card-body">
+                            <h5 class="card-title">APEPERIA ORACLE </h5>
+                            <p class="card-text">Proyecto del bootcamp ONE(ORACLE NEXT EDUCATION) donde hice la home de
+                                una pagina web</p>
+                            <a target="_blank" href="https://franpa13.github.io/apperia__proyecto__oracle/"
+                                class="btn btn-primary">Ver Proyecto</a>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="../assets/img__proyects/miniAlura.png" class="card-img-top" alt="MINIALURA">
+                        <div class="card-body">
+                            <h5 class="card-title">MINI ALURA</h5>
+                            <p class="card-text">Proyecto del bootcamp ONE(ORACLE NEXT EDUCATION) donde se usa flexbox y
+                                media querys</p>
+                            <a target="_blank" href="https://franpa13.github.io/flexbox__responsividad/"
+                                class="btn btn-primary">Ver Proyecto</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="../assets/img__proyects/pokedex.png" class="card-img-top" alt="POKEDEX">
+                        <div class="card-body">
+                            <h5 class="card-title">POKEDEX </h5>
+                            <p class="card-text">PRACTICANDO PETICIONES A LA API DESDE EL BACK USANDO LA POKEAPI</p>
+                            <a target="_blank" href="https://po-wmc2.onrender.com/" class="btn btn-primary">Ver
+                                Proyecto</a>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="../assets/img__proyects/mercadoLibre.png" class="card-img-top" alt="POKEDEX">
+                        <div class="card-body">
+                            <h5 class="card-title">MERCADO LIBRE</h5>
+                            <p class="card-text">PROYECTO REALIZADO EN EL BOOTCAMP DE DIGITAL HOUSE, EL CUAL CONSISTIA EN REALIZAR UNA REPLICA DE MERCADO LIBRE</p>
+                            <a target="_blank" href="https://mlibre.onrender.com/" class="btn btn-primary">Ver
+                                Proyecto</a>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="../assets/img__proyects/calculadora.png" class="card-img-top" alt="POKEDEX">
+                        <div class="card-body">
+                            <h5 class="card-title">CALCULADORA</h5>
+                            <p class="card-text">PROYECTO REALIZADO CON FIN DE ENTENDER DE MANERA CORRECTA EL DOM</p>
+                            <a target="_blank" href="https://calculadora-gtu1.onrender.com/" class="btn btn-primary">Ver
+                                Proyecto</a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+        </main>
+
+
+
+
+
+
+
+
+        <!-- Sección de Experiencia Profesional/Proyectos-->
+
+
+
+
+    </div>
+    <!-- Button trigger modal -->
+
+
+
+    <!-- Script del documento JavaScript -->
+    <script src="../../script.js"></script>
+</body>
+
+</html>
