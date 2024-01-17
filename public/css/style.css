@@ -108,6 +108,16 @@
 
  }
 
+ body::-webkit-scrollbar {
+     width: 12px;
+     /* ancho de la barra de desplazamiento */
+ }
+
+ body::-webkit-scrollbar-thumb {
+     background-color: #888;
+     /* color de la barra de desplazamiento */
+ }
+
  .img__mia {
 
      display: flex;
@@ -182,7 +192,7 @@
      display: flex;
      justify-content: center;
      margin-top: 60px;
-
+     
  }
 
  .nav__ul__dos li {
@@ -236,10 +246,11 @@
      align-items: center;
      text-align: center;
  }
- .img__tailwind{
-    margin-top: 20px;
 
-    width: 100px;
+ .img__tailwind {
+     margin-top: 20px;
+
+     width: 100px;
  }
 
  .skills__box {
@@ -374,9 +385,11 @@
      flex-wrap: wrap;
      justify-content: space-around;
  }
-.academic h2{
-    text-align: center;
-}
+
+ .academic h2 {
+     text-align: center;
+ }
+
  .academic__courses__box {
      border: none;
      border-radius: 10px;
@@ -386,7 +399,7 @@
      display: flex;
      flex-direction: column;
      justify-content: space-between;
-    
+
 
      transition: box-shadow 0.3s ease;
  }
@@ -458,50 +471,123 @@
  .academic__courses__box:hover img.img__egg {
      transform: scale(1.05);
  }
+
  /* .proyectos__reales{
     background-color: #b6b6b6;
  } */
 
 
  /* PROYECTOS */
- .proyectos{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+ .proyectos {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
 
 
  }
- .card {
-    margin: 20px;
 
-    transition: transform 0.3s ease;
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
-  }
-  .form__contacto{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-  }
-  .primeros__campos{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    gap: 20px;
-  }
-  .form__contacto label{
- display: flex;   
- flex-direction: column;
- color: #e6592e;
- font-weight: 700;
- gap: 12px;
-    
-  }
-  .form__contacto label input{
-    font-weight: bold;
-  }
-  .form__contacto label textarea{
-    font-weight: bold;
-  }
+ .card {
+     margin: 20px;
+
+     transition: transform 0.3s ease;
+ }
+
+ .card:hover {
+     transform: scale(1.05);
+ }
+
+ .form__contacto {
+     display: flex;
+     flex-direction: column;
+     gap: 30px;
+ }
+
+ .primeros__campos {
+     display: flex;
+     justify-content: space-around;
+     width: 100%;
+     gap: 20px;
+ }
+
+ .form__contacto label {
+     display: flex;
+     flex-direction: column;
+     color: #e6592e;
+     font-weight: 700;
+     gap: 12px;
+
+ }
+
+ .form__contacto label input {
+     font-weight: bold;
+ }
+
+ .form__contacto label textarea {
+     font-weight: bold;
+ }
+
+ @media screen and (max-width:480px) {
+     .sobre__mi {
+         justify-content: start;
+     }
+
+     .nombre__descripcion {
+         margin-left: 0px;
+     }
+
+     .section__saludo {
+
+         padding: 10px;
+         width: 100%;
+     }
+
+     .descripcion__mia {
+         margin-left: 0;
+     }
+     .img__mia {
+     
+       
+        width: 100%;
+   
+    }
+    .nav__ul__dos{
+        width: 100%;
+         display: flex;
+         flex-wrap: wrap;
+    }
+    .nav__ul__dos li{
+      margin: 5px;
+      width: 45%;
+    }
+    .iconos__redes ul{
+        
+        display: flex;
+        
+        margin: 0;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+    }
+    .academic__courses {
+        flex-direction: column;
+    }
+    .academic__courses__box{
+        width: 100%;
+    }
+    .skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        margin-left: 0px;
+        margin-right: 0px;
+        border-radius: 20px;
+        height: auto;
+   
+    }
+    .skills__line{
+        justify-content: space-between;
+     
+        width: 100%;
+    }
+ }
