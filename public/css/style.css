@@ -24,6 +24,17 @@
 
  }
 
+ .btn_menu {
+     background-color: #272121;
+     border: none;
+     display: none;
+ }
+
+ .btn_menu i {
+     color: white;
+     font-size: x-large;
+ }
+
  .nav__ul li {
      text-decoration: none;
      list-style: none;
@@ -192,7 +203,11 @@
      display: flex;
      justify-content: center;
      margin-top: 60px;
-     
+
+ }
+
+ .ul__dos {
+     display: none;
  }
 
  .nav__ul__dos li {
@@ -544,50 +559,144 @@
      .descripcion__mia {
          margin-left: 0;
      }
+
      .img__mia {
-     
-       
-        width: 100%;
-   
-    }
-    .nav__ul__dos{
-        width: 100%;
+
+
+         width: 100%;
+
+     }
+
+     .nav__ul__dos {
+         width: 100%;
          display: flex;
          flex-wrap: wrap;
-    }
-    .nav__ul__dos li{
-      margin: 5px;
-      width: 45%;
-    }
-    .iconos__redes ul{
-        
-        display: flex;
-        
-        margin: 0;
-        flex-direction: column;
-        justify-content: center;
-        width: 90%;
-    }
-    .academic__courses {
-        flex-direction: column;
-    }
-    .academic__courses__box{
-        width: 100%;
-    }
-    .skills {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 50px;
-        margin-left: 0px;
-        margin-right: 0px;
-        border-radius: 20px;
-        height: auto;
+     }
+
+     .nav__ul__dos li {
+         margin: 5px;
+         width: 45%;
+     }
+
+     .iconos__redes ul {
+
+         display: flex;
+
+         margin: 0;
+         flex-direction: column;
+         justify-content: center;
+         width: 90%;
+     }
+
+     .academic__courses {
+         flex-direction: column;
+     }
+
+     .academic__courses__box {
+         width: 100%;
+     }
+
+     .skills {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         margin-top: 50px;
+         margin-left: 0px;
+         margin-right: 0px;
+         border-radius: 20px;
+         height: auto;
+
+     }
+
+     .menu__header {
+         width: 100%;
+         display: flex;
+         justify-content: space-between;
+     }
+
+     .skills__line {
+         justify-content: space-between;
+
+         width: 100%;
+     }
+
+     .btn_menu {
+
+         cursor: pointer;
+         font-size: 20px;
+         background: none;
+         border: none;
+         display: block;
+
+     }
+
+
+     .ul__uno {
+         display: none;
+         position: absolute;
+         display: flex;
+         justify-content: start;
+
+     }
+
+     .nav__ul {
+
+
+
+
+
    
-    }
-    .skills__line{
-        justify-content: space-between;
-     
-        width: 100%;
+         background-color: #ff5722;
+         list-style: none;
+         padding: 0;
+         flex-direction: column;
+         position: fixed;
+         top: 0;
+         /* Ajusta según tus necesidades */
+         right: 0;
+         /* Ajusta según tus necesidades */
+         display: flex;
+         margin: 0;
+         justify-content: start;
+         align-items: end;
+         flex-wrap: wrap;
+         height: 100vh;
+         text-align: center;
+         color: black;
+     }
+
+     .nav__ul li {
+        
+     display: flex;
+     justify-content: center;
+     color: black;
+     }
+
+     .nav__ul a {
+         text-decoration: none;
+
+         text-align: center;
+         width: 100%;
+     }
+
+     .fa-solid {
+         color: white;
+         font-size: large;
+         font-weight: bold;
+         padding: 5px;
+         cursor: pointer;
+
+     }
+
+     .nav__ul li a{
+        color: black;
+        font-weight: bold;
+        border: 1px solid white;
+        border-radius: 5px;
+     }
+     .symbol-animation {
+        display: flex;
+        align-items: baseline;
+        font-size: 15px;
     }
  }
