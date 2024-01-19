@@ -22,34 +22,31 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Obtener referencias a elementos del DOM
-    let btn_menu = document.getElementById('btn_menu');
-    let nav = document.getElementById('nav__ul');
-    let bnClose = document.getElementById("btnClose");
-    let menuAbierto = false;
-    
- 
-    // Agregar evento de clic al botón de la hamburguesa
-    btn_menu.addEventListener('click', function () {
-        // Alternar la visibilidad del menú al hacer clic en el botón
-        if (menuAbierto === false) {
-            nav.style.display = 'none';
-            btn_menu.style.display = "block";
-        } else {
-            nav.style.display = 'block';
-            btn_menu.style.display = "none";
-        }
+    let botonMenu = document.getElementById("btn-abrir");
+    let btnCerrar = document.getElementById("btn-close");
+    let navBar = document.getElementById("nav__grande__dos");
 
-        // Cambiar el estado de menuAbierto
-        menuAbierto = !menuAbierto;
+    // Inicialmente oculto y fuera de la pantalla hacia la izquierda
+    navBar.style.display = "none";
+    navBar.style.left = "-100%";
+
+    // Agregar un pequeño retraso para permitir que el navegador aplique el cambio inicial
+    setTimeout(() => {
+        navBar.style.transition = "left 0.3s ease";
+    }, 10);
+
+    botonMenu.addEventListener("click", () => {
+        // Muestra el menú deslizándolo hacia la derecha
+        navBar.style.display = "block";
+        navBar.style.left = "0";
+        botonMenu.style.display = "none";
     });
 
-    // Agregar evento de clic al botón de cerrar
-    bnClose.addEventListener("click", () => {
-        nav.style.display = "none";
-        btn_menu.style.display = "block";
-
-        // Cambiar el estado de menuAbierto
-        menuAbierto = !menuAbierto;
+    btnCerrar.addEventListener("click", () => {
+        // Oculta el menú deslizándolo hacia la izquierda
+        navBar.style.left = "-100%";
+        botonMenu.style.display = "block";
     });
 });
+
+

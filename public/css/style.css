@@ -12,17 +12,74 @@
      background-color: #272121;
      justify-content: space-between;
      align-items: center;
-
+     
  }
+ .nav__grande{
+    width: 50%;
+ }
+ .nav__grande ul{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: end;
+   
+ }
+.nav__grande ul li{
+    text-decoration: none;
+    list-style: none;
+    margin: 20px;
+    font-weight: bold;
+    background-color: black;
+    border-radius: 10px;
 
- .nav__ul {
+
+}
+.nav__grande ul li:hover{
+    background-color: orange;
+  
+}
+.nav__grande ul li a{
+    color: rgb(4, 4, 4);
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+
+    padding: 15px;
+}
+.nav__grande ul li a:hover{
+    color: #000000;
+}
+.nav__grande__dos{
+    display: none;
+   background-color: rgb(39,33,33);
+
+   text-decoration: none;
+}
+.nav__grande__dos ul li{
+    background-color: #272121;
+}
+.nav__grande__dos ul li a{
+    text-decoration: none;
+    color: rgb(39,33,33);
+  padding: 0;
+}
+.nav__grande__dos ul li .btn-primary{
+   height: 5px;
+    display: none;
+}
+.btn-abrir{
+    background-color: #272121;
+    color: #272121;
+    border: none;
+}
+ /* .nav__ul_final {
      display: flex;
      justify-content: center;
      align-items: center;
      flex-wrap: wrap;
      margin-right: 20px;
 
- }
+ } */
 
  .btn_menu {
      background-color: #272121;
@@ -35,7 +92,7 @@
      font-size: x-large;
  }
 
- .nav__ul li {
+ /* .nav__ul_final li {
      text-decoration: none;
      list-style: none;
      margin: 20px;
@@ -44,7 +101,7 @@
 
  }
 
- .nav__ul li a {
+ .nav__ul_final li a {
      color: rgb(4, 4, 4);
      text-decoration: none;
      font-size: 15px;
@@ -53,15 +110,15 @@
 
  }
 
- .nav__ul li a:hover {
+ .nav__ul_final li a:hover {
 
      border: 1px solid orange;
      border-radius: 5px;
  }
 
- .nav__ul li .correo {
+ .nav__ul_final li .correo {
      font-size: 17px;
- }
+ } */
 
  header {
 
@@ -76,6 +133,7 @@
 
  .symbol-animation {
      display: flex;
+     
      align-items: baseline;
      font-size: 30px;
  }
@@ -219,9 +277,9 @@
 
  }
 
- /* .nav__ul__dos li a i{
-    font-size:35px;
- } */
+ .nav__ul__dos li a i{
+    font-size:20px;
+ }
 
 
  /* ESTILOS SKILLS */
@@ -404,6 +462,7 @@
  .academic h2 {
      text-align: center;
  }
+ 
 
  .academic__courses__box {
      border: none;
@@ -540,6 +599,7 @@
  .form__contacto label textarea {
      font-weight: bold;
  }
+ 
 
  @media screen and (max-width:480px) {
      .sobre__mi {
@@ -631,72 +691,123 @@
      }
 
 
-     .ul__uno {
-         display: none;
-         position: absolute;
-         display: flex;
-         justify-content: start;
-
-     }
-
-     .nav__ul {
-
-
-
-
-
    
-         background-color: #ff5722;
-         list-style: none;
-         padding: 0;
-         flex-direction: column;
-         position: fixed;
-         top: 0;
-         /* Ajusta según tus necesidades */
-         right: 0;
-         /* Ajusta según tus necesidades */
-         display: flex;
-         margin: 0;
-         justify-content: start;
-         align-items: end;
-         flex-wrap: wrap;
-         height: 100vh;
-         text-align: center;
-         color: black;
-     }
+     
 
-     .nav__ul li {
-        
-     display: flex;
-     justify-content: center;
-     color: black;
-     }
+     
 
-     .nav__ul a {
-         text-decoration: none;
-
-         text-align: center;
-         width: 100%;
-     }
+     
 
      .fa-solid {
          color: white;
          font-size: large;
          font-weight: bold;
          padding: 5px;
-         cursor: pointer;
+         cursor: pointer; 
 
      }
 
-     .nav__ul li a{
-        color: black;
-        font-weight: bold;
-        border: 1px solid white;
-        border-radius: 5px;
-     }
+   
      .symbol-animation {
         display: flex;
-        align-items: baseline;
+        align-items: center;
+        font-size: 22px;
+    }
+    .nav__grande{
+        display: none;
+    }
+    .nav__grande__dos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:start;
+        
+        width: 100%;
+        position: absolute;
+    top: 100%; 
+    left: 0;
+    
+  
+    background-color: rgba(255, 255, 255, 0.8); 
+ 
+   
+    z-index: 1; 
+   
+    transition: left 0.3s ease; 
+     }
+     .nav__grande__dos.visible {
+        left: -100%; /* Muestra el menú deslizándolo hacia la derecha */
+    }
+
+     .nav__grande__dos i{
+      color: black;
+  
+     }
+     .nav__grande__dos ul{
+        display: flex;
+        flex-direction: column;
+       width: 100%;
+        justify-content:start;
+        align-items: center;
+        flex-wrap: wrap;
+     
+        
+     }
+    .nav__grande__dos ul li{
+        text-decoration: none;
+        list-style: none;
+        margin: 20px;
+        font-weight: bold;
+        background-color: black;
+        border-radius: 10px;
+        width: 150px;
+        text-align: center;
+    }
+    .nav__grande__dos ul li .btn-primary{
+        width: 150px;
+        height: auto;
+  display: block;
+    }
+    .nav__grande__dos ul li:hover{
+        background-color: orange;
+      
+    }
+    .nav__grande__dos ul li a{
+        color: rgb(4, 4, 4);
+        text-decoration: none;
         font-size: 15px;
+        color: white;
+        width: 70px;
+        padding: 15px;
+    }
+    .nav__grande__dos ul li a:hover{
+        color: #000000;
+    }
+    .nav__grande__dos{
+        display: block;
+    }
+    .btn-abrir{
+        display: block;
+        background-color: #272121;
+        border: none;
+        position: absolute;
+        left: 0;
+    }
+    .menu__header{
+        display: flex;
+        position: relative;
+        flex-direction: row-reverse;
+    }
+    .symbol-animation {
+        display: flex;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    .menu{
+        position: relative;
+    }
+    .nav__grande__dos ul{
+        padding-left: 0;
     }
  }
