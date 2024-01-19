@@ -15,11 +15,11 @@
      
  }
  .nav__grande{
-    width: 50%;
+    width: 70%;
  }
  .nav__grande ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: end;
     width: 100%;
     align-items: end;
    
@@ -31,6 +31,7 @@
     font-weight: bold;
     background-color: black;
     border-radius: 10px;
+    width: auto;
 
 
 }
